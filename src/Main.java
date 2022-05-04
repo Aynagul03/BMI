@@ -12,7 +12,6 @@ public class Main {
         System.out.print("Пожалуйста, введите ваш вес, блок (кг): ");
         double weight = wt.nextDouble();
 
-        double BMI = weight / (height * height);
-        System.out.println("Индекс массы тела:" + BMI);
+        service.calculate(weight, height);
     }
 }
